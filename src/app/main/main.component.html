@@ -1,0 +1,322 @@
+<div [class.dark-theme]="dark" [class.light-theme]="!dark">
+    <div id="layout">
+        
+        <button (click)="toggleTheme()" [class.fa-moon]="!dark" [class.fa-sun]="dark" class="theme-switch fas  moonboi fa-2x settings-icon"></button>
+
+
+        <svg class="logo" viewBox="0 0 6667 1982" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <rect id="Page-2.1" serif:id="Page 2.1" x="0" y="0" width="6666.67" height="1981.97" style="fill:none;" />
+            <g id="Layer-1" serif:id="Layer 1">
+                <path d="M2203.75,1020.27l0,-234.353l360.547,0l-0,58.591l-294.073,0l-0,117.177l289.564,-0l0,58.585l-289.564,0l-0,175.768l-65.345,0l-1.129,-175.768Z" style="fill-rule:nonzero;" />
+                <path d="M2781.73,1051.83c-9.011,-27.039 -31.547,-45.072 -64.222,-45.072c-31.547,-0 -54.078,19.156 -63.094,45.072l127.316,-0Zm-190.41,27.038c-0,-67.602 58.585,-122.813 126.188,-122.813c73.238,-0 121.684,46.2 126.193,122.813l-0,21.408l-190.416,-0c7.888,28.167 32.676,47.323 64.223,47.323c20.279,-0 31.552,-5.637 48.451,-21.408l38.307,39.435c-22.536,22.531 -52.955,36.056 -86.758,36.056c-73.234,-0 -126.188,-49.58 -126.188,-122.814" style="fill-rule:nonzero;" />
+                <rect x="2907.35" y="785.919" width="63.094" height="410.121" />
+                <path d="M3049.3,961.687l63.094,0l0,234.353l-63.094,0l0,-234.353Zm-6.765,-143.092c0,-21.402 18.033,-38.307 39.441,-38.307c21.407,0 38.306,16.905 38.306,38.307c0,21.413 -16.899,39.435 -38.306,39.435c-21.408,-0 -39.441,-18.022 -39.441,-39.435" style="fill-rule:nonzero;" />
+                <path d="M3223.93,1078.87l-83.378,-117.177l67.607,0l49.575,69.854l49.574,-69.854l67.602,0l-83.378,117.177l83.378,117.177l-67.602,-0l-49.574,-69.854l-49.575,69.854l-67.607,-0l83.378,-117.177Z" style="fill-rule:nonzero;" />
+                <path d="M3575.45,785.921l56.334,0l295.196,312.1l-0,-312.1l66.473,0l0,410.121l-56.328,-0l-295.201,-312.095l-0,312.095l-66.474,-0l-0,-410.121Z" style="fill-rule:nonzero;" />
+                <path d="M4072.31,961.687l63.099,0l0,234.353l-63.099,0l-0,-234.353Zm-6.76,-143.092c0,-21.402 18.022,-38.307 39.43,-38.307c21.407,0 38.312,16.905 38.312,38.307c-0,21.413 -16.905,39.435 -38.312,39.435c-21.408,-0 -39.43,-18.022 -39.43,-39.435" style="fill-rule:nonzero;" />
+                <path d="M4391.16,1051.83c-9.011,-27.039 -31.552,-45.072 -64.222,-45.072c-31.552,-0 -54.077,19.156 -63.094,45.072l127.316,-0Zm-190.415,27.038c-0,-67.602 58.591,-122.813 126.193,-122.813c73.239,-0 121.685,46.2 126.188,122.813l-0,21.408l-190.41,-0c7.888,28.167 32.67,47.323 64.222,47.323c20.285,-0 31.552,-5.637 48.446,-21.408l38.312,39.435c-22.536,22.531 -52.954,36.056 -86.758,36.056c-73.239,-0 -126.193,-49.58 -126.193,-122.814" style="fill-rule:nonzero;" />
+                <path d="M4681.28,1078.87c-0,-37.178 -25.91,-64.228 -63.094,-64.228c-36.055,0 -63.099,27.05 -63.099,64.228c-0,36.05 27.044,64.222 63.099,64.222c37.184,0 63.094,-28.172 63.094,-64.222m-189.287,-0c-0,-67.602 56.34,-122.813 122.813,-122.813c23.659,-0 46.2,5.636 66.474,20.284l-0,-190.415l63.099,-0l0,292.944c0,67.602 -58.585,122.813 -126.193,122.813c-73.233,0 -126.193,-49.58 -126.193,-122.813" style="fill-rule:nonzero;" />
+                <path d="M4991.11,1051.83c-9.017,-27.039 -31.553,-45.072 -64.228,-45.072c-31.547,-0 -54.077,19.156 -63.094,45.072l127.322,-0Zm-190.416,27.038c0,-67.602 58.586,-122.813 126.188,-122.813c73.239,-0 121.69,46.2 126.193,122.813l0,21.408l-190.41,-0c7.888,28.167 32.67,47.323 64.217,47.323c20.284,-0 31.552,-5.637 48.452,-21.408l38.312,39.435c-22.536,22.531 -52.96,36.056 -86.764,36.056c-73.233,-0 -126.188,-49.58 -126.188,-122.814" style="fill-rule:nonzero;" />
+                <path d="M5103.21,1049.57c0,-51.826 37.178,-87.881 87.887,-87.881l22.53,-0l-0,58.585l-18.028,0c-16.899,0 -29.29,11.274 -29.29,29.296l0,146.477l-63.099,0l0,-146.477Z" style="fill-rule:nonzero;" />
+                <path d="M5265.45,1078.87c0,-73.239 63.099,-122.813 127.316,-122.813c40.564,-0 73.239,14.647 95.769,39.435c23.665,-24.788 58.591,-39.435 93.518,-39.435c73.239,-0 125.065,49.574 125.065,122.813l-0,117.177l-63.094,-0l-0,-117.177c-0,-37.178 -27.044,-64.228 -63.094,-64.228c-37.183,0 -63.099,27.05 -63.099,64.228l-0,117.177l-63.094,-0l0,-117.177c0,-37.178 -25.91,-64.228 -63.099,-64.228c-36.05,0 -63.089,27.05 -63.089,64.228l0,117.177l-63.099,-0l0,-117.177Z" style="fill-rule:nonzero;" />
+                <path d="M5945.97,1078.87c0,-37.178 -25.916,-64.228 -63.099,-64.228c-36.055,0 -63.088,27.05 -63.088,64.228c-0,36.05 27.033,64.222 63.088,64.222c37.183,0 63.099,-28.172 63.099,-64.222m-189.292,-0c-0,-67.602 58.591,-122.813 126.193,-122.813c73.239,-0 126.193,49.574 126.193,122.813l-0,117.177l-61.971,-0l0,-20.279c-14.648,15.77 -40.563,25.915 -69.853,25.915c-70.982,0 -120.562,-49.58 -120.562,-122.813" style="fill-rule:nonzero;" />
+                <path d="M6069.9,1078.87c-0,-73.239 63.099,-122.813 127.316,-122.813c73.233,-0 125.065,49.574 125.065,122.813l-0,117.177l-63.094,-0l-0,-117.177c-0,-37.178 -25.916,-64.228 -63.094,-64.228c-36.055,0 -63.094,27.05 -63.094,64.228l0,117.177l-63.099,-0l-0,-117.177Z" style="fill-rule:nonzero;" />
+                <path d="M6383.12,1078.87c-0,-73.239 63.094,-122.813 127.316,-122.813c73.233,-0 125.065,49.574 125.065,122.813l-0,117.177l-63.094,-0l-0,-117.177c-0,-37.178 -25.916,-64.228 -63.1,-64.228c-36.049,0 -63.093,27.05 -63.093,64.228l-0,117.177l-63.094,-0l-0,-117.177Z" style="fill-rule:nonzero;" />
+                <path d="M912.835,959.953l-306.547,-0l-0,-124.026l311.305,0l0,-62.009l-381.631,-0l-0,248.095l0.773,377.601l-30.046,-30.041l-378.585,-378.59l855.785,-855.786l347.561,347.555l-0,-96.936l-347.561,-347.561l-952.722,952.728l475.738,475.744l99.383,99.382l-0,-544.096l306.547,-0l-0,-62.06Z" style="fill-rule:nonzero;" />
+                <path d="M1936.62,990.982l-575.171,-575.171l0,688.484l-312.461,-330.378l-59.609,0l0,434.13l70.365,-0l0,-330.378l312.462,330.378l59.619,-0l0,-624.923l29.996,29.996l377.857,377.862l-855.785,855.785l-347.605,-347.599l-0,96.942l347.605,347.6l952.727,-952.728Z" style="fill-rule:nonzero;" />
+            </g>
+        </svg>
+
+        <h1 style="display: none">Felix Niedermann - Software Developer</h1>
+
+        <h2>About Me</h2>
+
+        <h4>
+        Hi, I'm Felix,
+        <br>
+I am {{age}} years old and live in Lucerne, Switzerland. I will complete my two-year apprenticeship and my four-year education as a Software Developer in the summer.
+<br>
+I want to use my skills to create user-friendly applications that have a positive impact on the users. For me, an application should not only work but also have an appealing design so that the user enjoys using it.
+New challenges are no obstacles for me, as I like to delve into a topic and acquire skills quickly. 
+<br>
+I have much experience as a full stack developer so far, with a little bit of experience building IOS/Android apps. Now that I finished most of my education, I currently have time to teach myself Python by building small machine learning projects.
+            <br>
+            Besides my education, I also studied getting my first
+            <a id="certificate" class="link" target="_blank" href="https://www.linkedin.com/in/felix-niedermann-86b326200/detail/treasury/education:697774490/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAADNOM1MBSjDz3V4QtpcG6yQ1vakGUh8C5cY%2C1609838012601)&section=education%3A697774490&treasuryCount=1">certificate 
+                <!-- <div id="certificateContainer">
+                    
+                <embed src="/src/Assets/Zertifikat_B-Lizenz.pdf" width="200" height="800" />
+
+                </div> --></a> 
+
+            as a Fitness Trainer, which I successfully have since 2020.
+
+
+        </h4>
+        <style>
+            #certificateContainer {
+                display: none;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                transform: translateX(-13%);
+                background: var(--secondary-background);
+                color: var(--primary-text-color);
+                box-shadow: 0px 0px 20px -5px var(--shadow);
+                padding: 10px;
+            }
+
+            #certificate:hover #certificateContainer, #certificateContainer:hover, #certificateContainer embed:hover #certificateContainer {
+                display: block;
+            }
+        </style>
+
+        <h2 id="skills">Skills</h2>
+        <!-- TODO Resume -->
+        <a class="link" href="/src/Assets/Resume_EN_Website.pdf" target="_blank">Resume <i class="fas fa-arrow-right"></i> </a>
+        <br><br>
+        <h3>Languages</h3>
+        <div class="tagContainer">
+            <div class="tag">C#</div>
+            <div class="tag">TypeScript</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">PHP</div>
+            <div class="tag">SwiftUI</div>
+            <div class="tag">VB.NET</div>
+
+            <!-- <div class="tag">ASP.NET with VB & C#</div>
+            <div class="tag">HTML</div>
+            <div class="tag">CSS</div>
+            <div class="tag">Javascript</div>
+            <div class="tag">Bootstrap</div> -->
+        </div>
+
+        <h3>Frameworks</h3>
+        <div class="tagContainer">
+            <div class="tag">ASP.NET</div>
+            <div class="tag">Ionic</div>
+            <div class="tag">Bootstrap</div>
+            <div class="tag">Angular</div>
+
+            <!-- <div class="tag">Ionic (Angular)</div>
+            <div class="tag">Firebase</div>
+            <div class="tag">Swift</div>
+            <div class="tag">Python</div> -->
+        </div>
+
+        <h3>Tools</h3>
+        <div class="tagContainer">
+            <div class="tag">Git & Github</div>
+            <div class="tag">Postman</div>
+            <div class="tag">Xcode</div>
+            <div class="tag">Visual Studio (Code)</div>
+            <div class="tag">Jetbrain</div>
+
+            <!-- <div class="tag">Machine Learning</div>
+            <div class="tag">Data Science & Analytics</div>
+            <div class="tag">Swift</div>
+            <div class="tag">Xcode</div> -->
+        </div>
+
+        <h3>Design</h3>
+        <div class="tagContainer">
+            <div class="tag">Sketch</div>
+            <div class="tag">Affinity Designer</div>
+            <div class="tag">Adobe XD</div>
+
+            <!-- <div class="tag">Visual Studio Code</div>
+            <div class="tag">Visual Studio</div>
+            <div class="tag">Jetbrain Tools</div> -->
+        </div>
+
+        <h2 id="projects">Projects</h2>
+        <div class="projectContainer">
+        <!-- <div class="project" data-aos="zoom-out">
+
+                <h3>Calisthenics Community <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></i></h3>
+                <p>More information about this app will be coming soon. It's a mobile app I'm developing with Ionic/Angular.</p>
+                    <a href="" target="_blank" rel="noopener noreferrer"><img src="/src/Assets/project_images/" alt="Image of the Calisthenics Community App"></a>
+                <div class="tagContainer projectTagContainer">
+                    <small>
+                        <div class="tag">Ionic</div>
+                    </small>
+                    <small>
+                        <div class="tag">Angular</div>
+                    </small>
+                    <small>
+                        <div class="tag">HTML/CSS</div>
+                    </small>
+                </div>
+            </div> -->
+            <div class="project" data-aos="zoom-out">
+
+                <h3>Doc Devices 
+                    <a href="https://www.doccardiacdevice.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://www.doccardiacdevice.com/Scan_mobile" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </h3>
+                <p>Doc Devices is a mobile app used to detect pacemakers of an X-Ray with machine learning. I mainly developed the back-end for the Doc Devices app as well as the administration interface. The app was made for the cantonal hospital
+                    of Lucerne.</p>
+                    <a href="https://www.doccardiacdevice.com" target="_blank" rel="noopener noreferrer"><img src="../../assets/project_images/project_dcd.png" alt="Image of the Doc Cardiac App"></a>
+                <div class="tagContainer projectTagContainer">
+                    <small>
+                        <div class="tag">Azure Custom Vision</div>
+                    </small>
+                    <small>
+                        <div class="tag">Swift</div>
+                    </small>
+                    <small>
+                        <div class="tag">Java</div>
+                    </small>
+                    <small>
+                        <div class="tag">ASP.NET/C#</div>
+                    </small>
+                </div>
+            </div>
+            <div class="project" data-aos="zoom-out">
+
+                <h3>doc-battle.com <a href="http://doc-battle.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></h3>
+                <p>I co-developed the doc-battle.com website for the cantonal hospital of Lucerne. This is the website for the associated app "DocBattle".</p>
+                <a href="http://doc-battle.com" target="_blank" rel="noopener noreferrer"><img src="../../assets/project_images/project_docbattlech.png" alt="Image of the Doc Battle Website"></a>
+                <div class="tagContainer projectTagContainer">
+                    <small>
+                        <div class="tag">ASP.NET/VB.NET</div>
+                    </small>
+                    <small>
+                        <div class="tag">JavaScript</div>
+                    </small>
+                    <small>
+                        <div class="tag">HTML/CSS</div>
+                    </small>
+                </div>
+            </div>
+            <div class="project" data-aos="zoom-out">
+
+                <h3>Personal Portfolio V1 <a href="http://felixniedermann.ch" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></h3>
+                <p>A simple portfolio website to show who I am, my skills and my projects.</p>
+                <a href="http://felixniedermann.ch" target="_blank" rel="noopener noreferrer"><img src="../../assets/project_images/project_portfolio_v1.png" alt="Image of the Doc Battle Website"></a>
+                <div class="tagContainer projectTagContainer">
+                    <small>
+                        <div class="tag">PHP</div>
+                    </small>
+                    <small>
+                        <div class="tag">JavaScript</div>
+                    </small>
+                    <small>
+                        <div class="tag">HTML/CSS</div>
+                    </small>
+                </div>
+            </div>
+            <div class="project" data-aos="zoom-out">
+
+                <h3>Teamkatja.com <a href="https://teamkatja.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></h3>
+                <p>I created the website for Katja to promote her fitness boxing business.</p>
+                <a href="https://teamkatja.com" target="_blank" rel="noopener noreferrer"><img src="../../assets/project_images/project_katja.png" alt="Image of the Teamkatja website"></a>
+                <div class="tagContainer projectTagContainer">
+                    <small>
+                        <div class="tag">PHP</div>
+                    </small>
+                    <small>
+                        <div class="tag">JavaScript</div>
+                    </small>
+                    <small>
+                        <div class="tag">HTML/CSS</div>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="contact">Get In Touch</h2>
+
+        <div class="form form-contact"  data-aos="zoom-out">
+            <form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()" class="form-edit">
+                <div class="contact-block" [style.color]="messageColor">{{formMessage}}</div>
+                <div>
+                    <input formControlName="name" type="text" name="name" id="name" class="input" required>
+                    <label for="name" class="floating-label">Name</label>
+                    <span class="help-block" [hidden]="contactForm.controls['name'].valid || !contactForm.controls['name'].touched">First Name is required</span>
+                </div>
+                <div>
+                    <input formControlName="email" type="text" id="email" name="email" class="input" required>
+                    <label for="email" class="floating-label">Email</label>
+                    <span class="help-block" [hidden]="contactForm.controls['email'].valid || !contactForm.controls['email'].touched">Email is invalid</span>
+                </div>
+                <div>
+                    <br />
+                    <label for="message" class="floating-label">Message</label>
+                    <textarea formControlName="message"  style="height: unset; margin-top: 5px;" required rows="5" id="message" name="message" class="input" ></textarea>
+                    <span class="help-block" [hidden]="contactForm.controls['message'].valid || !contactForm.controls['message'].touched">Message has to be at least 10 characters</span>
+                </div>
+                <div style="display: flex;">
+                    <input type="hidden" name="_next" value="http://localhost:4200/?sent=success">
+                    <input type="hidden" name="_subject" value="Portfolio Website Contact">
+                    <button type="submit" class="btn btn-login" [disabled]="contactForm.invalid">Send</button>
+                </div>
+                <div class="iconContainer">
+                    <a href="https://www.linkedin.com/in/felix-niedermann-86b326200/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                    <a href="https://stackoverflow.com/users/13371132/felix-niedermann" target="_blank"><i class="fab fa-stack-overflow icon"></i></a>
+                    <a href="https://github.com/FelixNiedermann" target="_blank"><i class="fab fa-github icon"></i></a>
+                    <a href="https://instagram.com/F_lix.n/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- <h2>Get to know me more</h2>
+
+        <div class="socialIconsContainer">
+            <a target="_blank" href="https://github.com/FelixNiedermann"><i class="fab fa-github fa-2x icon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/f_lix.n/"><i class="fab fa-instagram fa-2x icon"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/13371132/felix-niedermann"><i
+                    class="fab fa-2x fa-stack-overflow icon"></i></a>
+        </div> -->
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        load()
+    </script>
+    <a href="https://github.com/FelixNiedermann" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" id="gitBackground"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm" id="gitBody2"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body" id="gitBody"></path>
+        </svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+
+        @keyframes octocat-wave {
+
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+
+</div>
