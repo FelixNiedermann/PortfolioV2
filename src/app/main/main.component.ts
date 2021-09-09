@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-main',
@@ -35,7 +36,10 @@ export class MainComponent implements OnInit {
       this.messageColor = "var(--button-background)";
     }
 
-    // Calc Age
+    this.calcAge();
+  }
+
+  calcAge() {
     let birth = new Date("09/18/2001");
     console.log(birth);
     const timeDiff = Math.abs(Date.now() - birth.getTime());
@@ -43,11 +47,8 @@ export class MainComponent implements OnInit {
   }
 
   onFormSubmit(): void {
-    let url = "https://formsubmit.co/contact@felixniedermann.ch";
+    let url = environment.contactUrl;
     let data = this.contactForm.value;
-    // this.http.post(url, data).subscribe((response) => {
-    //   window.open(`${url}?data=${encodeURI(data)}`, `_blank`)
-    // })
 
     var form = document.createElement("form");
     form.target = "view";
@@ -76,12 +77,3 @@ export class MainComponent implements OnInit {
     console.log(this.dark);
   }
 }
-
-// export class Form {
-//   constructor(
-//     public name: string,
-//     public email: string,
-//     public message: string,
-//     public phone?: string,
-//   ){}
-// }
