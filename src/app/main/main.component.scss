@@ -250,6 +250,9 @@ input:checked + .slider:before {
     // filter: drop-shadow( 3px 3px 5px var(--shadow));
 }
 
+.project-icon {
+    margin-left: 15px;
+}
 
 .projectContainer {
     display: grid;
